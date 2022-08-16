@@ -22,3 +22,4 @@ Return the result table ordered by employee_id.
 */
 
 --  Write your MySQL query statement below
+select employee_id, if(employee_id %2 != 0 and name not like 'M%', salary, 0) as bonus from Employees
