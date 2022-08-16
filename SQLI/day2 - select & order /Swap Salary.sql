@@ -26,6 +26,5 @@ Note that you must write a single update statement, do not write any select stat
 
 
 --  Write your MySQL query statement below
-
 UPDATE salary
 SET sex = if(sex='f','m','f')
