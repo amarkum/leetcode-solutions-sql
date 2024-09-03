@@ -26,5 +26,5 @@ Return the result table in any order.
 select name from customer where (referee_id is null) or (referee_id != 2)
 
 -- Another Approach
-SELECT name FROM customer WHERE COALESCE(referee_id, 0) != 2;
+select name from customer where COALESCE(referee_id, 0) != 2;
 
